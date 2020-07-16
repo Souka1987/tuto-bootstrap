@@ -7,123 +7,309 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Mon site Bootsrap</title>
+    <title>Mon site bootstrap</title>
     <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 
 <body>
-    <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Titre</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <!--Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img src="icon.png" alt="avatar image" height="35">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="#">Hidden brand</a>
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Link</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>
                 <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-danger my-2 my-sm-0" type="submit">Search</button>
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
         </div>
     </nav>
-    <!--/Navbar-->
+    <!--/Navbar -->
 
     <!--Header-->
-    <div class="jumbotron" style="background-color: beige;">
-        <h1 class="display-4" style="text-align: center;">Welcome</h1>
-        <p class="lead" style="text-align: center; font-size: smaller;">Cumque pertinacius ut legum gnarus accusatorem flagitaret atque sollemnia, doctus id Caesar libertatemque superbiam ratus tamquam obtrectatorem audacem excarnificari praecepit, qui ita evisceratus ut cruciatibus membra deessent, inplorans caelo iustitiam, torvum renidens fundato pectore mansit inmobilis nec se incusare nec quemquam alium passus et tandem nec confessus nec confutatus cum abiecto consorte poenali est morte multatus. et ducebatur intrepidus temporum iniquitati insultans, imitatus Zenonem illum veterem Stoicum qui ut mentiretur quaedam laceratus diutius, avulsam sedibus linguam suam cum cruento sputamine in oculos interrogantis Cyprii regis inpegit.</p>
+    <div class="jumbotron text-center">
+
+        <!-- Title -->
+        <h2 class="card-title h2">Material Design for Bootstrap</h2>
+        <!-- Subtitle -->
+        <p class="blue-text my-4 font-weight-bold">Powerful and free Material Design UI KIT</p>
+
+        <!-- Grid row -->
+        <div class="row d-flex justify-content-center">
+
+            <!-- Grid column -->
+            <div class="col-xl-7 pb-2">
+
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga aliquid dolorem ea
+                    distinctio exercitationem delectus qui, quas eum architecto, amet quasi accusantium, fugit
+                    consequatur ducimus obcaecati numquam molestias hic itaque accusantium doloremque laudantium, totam
+                    rem aperiam.</p>
+
+            </div>
+            <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+
+        <hr class="my-4">
+
+        <div class="pt-2">
+            <button type="button" class="btn btn-blue waves-effect">Buy now <span
+                    class="far fa-gem ml-1"></span></button>
+            <a href="/contact.html">
+                <button type="button" class="btn btn-outline-primary waves-effect">Download <i
+                        class="fas fa-download ml-1"></i></button>
+
+            </a>
+        </div>
+
     </div>
     <!--/Header-->
 
-    <!--News-->
-    <div class="container">
-        <h3 style="text-align: center;">NEWS</h3>
-        <div class="row">
-            <div class="card" style="width: 18rem; margin: 30px;">
-                <img src="cat1.jpg" class="card-img-top" alt="..." class="rounded">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                </div>
+
+    <!--Tabs-->
+    <div class="classic-tabs">
+
+        <ul class="nav tabs-cyan" id="myClassicTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link  waves-light active show" id="profile-tab-classic" data-toggle="tab"
+                    href="#profile-classic" role="tab" aria-controls="profile-classic" aria-selected="true">Profile</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link waves-light" id="follow-tab-classic" data-toggle="tab" href="#follow-classic"
+                    role="tab" aria-controls="follow-classic" aria-selected="false">Follow</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link waves-light" id="contact-tab-classic" data-toggle="tab" href="#contact-classic"
+                    role="tab" aria-controls="contact-classic" aria-selected="false">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link waves-light" id="awesome-tab-classic" data-toggle="tab" href="#awesome-classic"
+                    role="tab" aria-controls="awesome-classic" aria-selected="false">Be awesome</a>
+            </li>
+        </ul>
+        <div class="tab-content border-right border-bottom border-left rounded-bottom" id="myClassicTabContent">
+            <div class="tab-pane fade active show" id="profile-classic" role="tabpanel"
+                aria-labelledby="profile-tab-classic">
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+                    dicta
+                    sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                    consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
+                    dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi
+                    tempora
+                    incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
             </div>
-            <div class="card" style="width: 18rem; margin: 30px">
-                <img src="cat2.jpg" class="card-img-top" alt="..." class="rounded">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                </div>
+            <div class="tab-pane fade" id="follow-classic" role="tabpanel" aria-labelledby="follow-tab-classic">
+                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
+                    aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit
+                    esse
+                    quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
             </div>
-            <div class="card" style="width: 18rem; margin: 30px;">
-                <img src="cat3.jpeg" class="card-img-top" alt="..." class="rounded">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                </div>
+            <div class="tab-pane fade" id="contact-classic" role="tabpanel" aria-labelledby="contact-tab-classic">
+                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                    deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non
+                    provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum
+                    fuga.
+                    Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est
+                    eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas
+                    assumenda est, omnis dolor repellendus. </p>
             </div>
+            <div class="tab-pane fade" id="awesome-classic" role="tabpanel" aria-labelledby="awesome-tab-classic">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                    dolore
+                    eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+
+    </div>
+    <!--/Tabs-->
+
+    <!--Cards-->
+    <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
         </div>
     </div>
-    <!--/News-->
+    <!--/Cards-->
 
-    <!--Service-->
-    <div class="container">
-        <h3 style="text-align: center;">SERVICE</h3>
-    <div class="card mb-3" style="max-width: 600px;">
-        <div class="row no-gutters">
-          <div class="col-md-4">
-            <img src="lion1.jpg" class="card-img" alt="...">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="page-footer font-small indigo">
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-3 mx-auto">
+
+                    <!-- Links -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Very long link 1</a>
+                        </li>
+                        <li>
+                            <a href="#!">Very long link 2</a>
+                        </li>
+                        <li>
+                            <a href="#!">Very long link 3</a>
+                        </li>
+                        <li>
+                            <a href="#!">Very long link 4</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-3 mx-auto">
+
+                    <!-- Links -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 2</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 3</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 4</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-3 mx-auto">
+
+                    <!-- Links -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 2</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 3</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 4</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-3 mx-auto">
+
+                    <!-- Links -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 2</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 3</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 4</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
             </div>
-          </div>
+            <!-- Grid row -->
+
         </div>
-      </div>
+        <!-- Footer Links -->
 
-      <div class="card mb-3" style="max-width: 600px;">
-        <div class="row no-gutters">
-          <div class="col-md-4">
-            <img src="lion2.jpeg" class="card-img" alt="...">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
-          </div>
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
         </div>
-      </div>
-    </div>
-    <!--/Service-->
+        <!-- Copyright -->
 
-
+    </footer>
+    <!--/footer-->
 </body>
 
 </html>
