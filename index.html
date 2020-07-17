@@ -13,24 +13,39 @@
 </head>
 
 <body>
-    <!--Navbar -->
+
+    <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <img src="icon.png" alt="avatar image" height="35">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
-            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <a class="navbar-brand" href="#">Hidden brand</a>
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#">News</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    <a class="nav-link" href="#">Story</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Characters</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Images</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Videos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Goodies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
@@ -39,277 +54,155 @@
             </form>
         </div>
     </nav>
-    <!--/Navbar -->
+    <!--/Navbar-->
 
     <!--Header-->
-    <div class="jumbotron text-center">
+    <div class="jumbotron text-center" style="padding: 200px; background-color: #00bcd4;">
 
         <!-- Title -->
-        <h2 class="card-title h2">Material Design for Bootstrap</h2>
-        <!-- Subtitle -->
-        <p class="blue-text my-4 font-weight-bold">Powerful and free Material Design UI KIT</p>
+        <h2 class="card-title h2" style="text-align: left;">Titre</h2>
+        <!-- Grid column -->
+        <div class="col-xl-7 pb-2">
 
-        <!-- Grid row -->
-        <div class="row d-flex justify-content-center">
-
-            <!-- Grid column -->
-            <div class="col-xl-7 pb-2">
-
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga aliquid dolorem ea
-                    distinctio exercitationem delectus qui, quas eum architecto, amet quasi accusantium, fugit
-                    consequatur ducimus obcaecati numquam molestias hic itaque accusantium doloremque laudantium, totam
-                    rem aperiam.</p>
-
-            </div>
-            <!-- Grid column -->
-
+            <p class="card-text" style="text-align: left;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Fuga aliquid dolorem ea
+                distinctio exercitationem delectus qui, quas eum architecto, amet quasi accusantium, fugit
+                consequatur ducimus obcaecati numquam molestias hic itaque accusantium doloremque laudantium, totam
+                rem aperiam.</p>
         </div>
-        <!-- Grid row -->
-
-        <hr class="my-4">
-
-        <div class="pt-2">
-            <button type="button" class="btn btn-blue waves-effect">Buy now <span
-                    class="far fa-gem ml-1"></span></button>
-            <a href="/contact.html">
-                <button type="button" class="btn btn-outline-primary waves-effect">Download <i
-                        class="fas fa-download ml-1"></i></button>
-
-            </a>
+        <!-- Grid column -->
+        <div class="d-flex flex-row bd-highlight mb-3">
+            <button type="button" class="btn btn-primary btn-sm" style="margin: 10px;">Info</button>
+            <button type="button" class="btn btn-secondary btn-sm" style="margin: 10px;">Info</button>
         </div>
-
     </div>
     <!--/Header-->
 
-
-    <!--Tabs-->
-    <div class="classic-tabs">
-
-        <ul class="nav tabs-cyan" id="myClassicTab" role="tablist">
-            <li class="nav-item">
-                <a class="nav-link  waves-light active show" id="profile-tab-classic" data-toggle="tab"
-                    href="#profile-classic" role="tab" aria-controls="profile-classic" aria-selected="true">Profile</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link waves-light" id="follow-tab-classic" data-toggle="tab" href="#follow-classic"
-                    role="tab" aria-controls="follow-classic" aria-selected="false">Follow</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link waves-light" id="contact-tab-classic" data-toggle="tab" href="#contact-classic"
-                    role="tab" aria-controls="contact-classic" aria-selected="false">Contact</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link waves-light" id="awesome-tab-classic" data-toggle="tab" href="#awesome-classic"
-                    role="tab" aria-controls="awesome-classic" aria-selected="false">Be awesome</a>
-            </li>
-        </ul>
-        <div class="tab-content border-right border-bottom border-left rounded-bottom" id="myClassicTabContent">
-            <div class="tab-pane fade active show" id="profile-classic" role="tabpanel"
-                aria-labelledby="profile-tab-classic">
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
-                    dicta
-                    sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                    consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
-                    dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi
-                    tempora
-                    incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-            </div>
-            <div class="tab-pane fade" id="follow-classic" role="tabpanel" aria-labelledby="follow-tab-classic">
-                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
-                    aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit
-                    esse
-                    quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-            </div>
-            <div class="tab-pane fade" id="contact-classic" role="tabpanel" aria-labelledby="contact-tab-classic">
-                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
-                    deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non
-                    provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum
-                    fuga.
-                    Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est
-                    eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas
-                    assumenda est, omnis dolor repellendus. </p>
-            </div>
-            <div class="tab-pane fade" id="awesome-classic" role="tabpanel" aria-labelledby="awesome-tab-classic">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                    dolore
-                    eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum.</p>
-            </div>
+    <!--Tab-->
+    <div class="card card text-white mb-3" style="background-color: #cddc39;">
+        <h5 class="card-header">News</h5>
+        <div class="card-body">
+            <h5 class="card-title"></h5>
+            <p class="card-text">Quam ob rem cave Catoni anteponas ne istum quidem ipsum, quem Apollo,
+                ut ais, sapientissimum iudicavit; huius enim facta, illius dicta laudantur. De me autem,
+                ut iam cum utroque vestrum loquar, sic habetote. Nam sole orto magnitudine angusti gurgitis
+                sed profundi a transitu arcebantur et dum piscatorios quaerunt lenunculos vel innare temere
+                contextis cratibus parant, effusae legiones, quae hiemabant tunc apud Siden, isdem impetu occurrere
+                veloci.
+                et signis prope ripam locatis ad manus comminus conserendas denseta scutorum conpage semet scientissime
+                praestruebant, ausos quoque aliquos fiducia nandi vel cavatis arborum truncis amnem permeare latenter
+                facillime trucidarunt.</p>
+            <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
         </div>
-
     </div>
-    <!--/Tabs-->
+    <!--/Tab-->
 
     <!--Cards-->
-    <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
+    <div class="container">
+        <div class="row d-flex justify-content-around">
+            <!--<div class="card">-->
+            <div class="card col-xl-3 col-md-5 col-sm-12 mx-1">
+                <img src="jojo.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title that wraps to a new line</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+
+            <!--<div class="card">-->
+            <div class="card col-xl-3 col-md-5 col-sm-12 mx-1">
+                <img src="jojo.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title that wraps to a new line</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+
+            <!--<div class="card">-->
+            <div class="card col-xl-3 col-md-5 col-sm-12 mx-1">
+                <img src="jojo.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title that wraps to a new line</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
         </div>
     </div>
     <!--/Cards-->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <!--Banner-->
+    <div class="jumbotron jumbotron-fluid">
+        <h1>Banner</h1>
+    </div>
+    </div>
+    <!--/Banner-->
 
     <!-- Footer -->
-    <footer class="page-footer font-small indigo">
-
-        <!-- Footer Links -->
-        <div class="container text-center text-md-left">
-
-            <!-- Grid row -->
-            <div class="row">
-
-                <!-- Grid column -->
-                <div class="col-md-3 mx-auto">
-
-                    <!-- Links -->
-                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
-
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="#!">Very long link 1</a>
-                        </li>
-                        <li>
-                            <a href="#!">Very long link 2</a>
-                        </li>
-                        <li>
-                            <a href="#!">Very long link 3</a>
-                        </li>
-                        <li>
-                            <a href="#!">Very long link 4</a>
-                        </li>
-                    </ul>
-
+    <div class="d-flex flex-column"
+        style="background-color: #007bff; background: linear-gradient(to right, #0062E6, #33AEFF);">
+        <div id="page-content">
+            <div class="container text-center">
+                <div class="row justify-content-center">
+                    <div class="col-md-7">
+                        <h1 class="font-weight-light mt-4 text-white">Footer</h1>
+                        <p class="lead text-white-50">...</p>
+                    </div>
                 </div>
-                <!-- Grid column -->
-
-                <hr class="clearfix w-100 d-md-none">
-
-                <!-- Grid column -->
-                <div class="col-md-3 mx-auto">
-
-                    <!-- Links -->
-                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
-
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="#!">Link 1</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 2</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 3</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 4</a>
-                        </li>
-                    </ul>
-
-                </div>
-                <!-- Grid column -->
-
-                <hr class="clearfix w-100 d-md-none">
-
-                <!-- Grid column -->
-                <div class="col-md-3 mx-auto">
-
-                    <!-- Links -->
-                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
-
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="#!">Link 1</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 2</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 3</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 4</a>
-                        </li>
-                    </ul>
-
-                </div>
-                <!-- Grid column -->
-
-                <hr class="clearfix w-100 d-md-none">
-
-                <!-- Grid column -->
-                <div class="col-md-3 mx-auto">
-
-                    <!-- Links -->
-                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
-
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="#!">Link 1</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 2</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 3</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 4</a>
-                        </li>
-                    </ul>
-
-                </div>
-                <!-- Grid column -->
-
             </div>
-            <!-- Grid row -->
-
         </div>
-        <!-- Footer Links -->
+        <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+            <div class="container text-center">
+                <small>Copyright &copy; Your Website</small>
+            </div>
+        </footer>
+    </div>
+    <!-- Footer -->
 
-        <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">© 2020 Copyright:
-            <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
-        </div>
-        <!-- Copyright -->
 
-    </footer>
-    <!--/footer-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+
 </body>
 
 </html>
